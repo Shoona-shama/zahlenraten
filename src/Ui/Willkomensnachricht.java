@@ -23,7 +23,6 @@ public class Willkomensnachricht {
         System.out.println("Ich habe eine Zahl zwischen 1 und 100 gewählt. Kannst du sie erraten?");
         Scanner scn = new Scanner(System.in);
         errateZahl = scn.nextInt();
-        //TODO condition for while is : aslongas the number of Runde is smaller than 10
         while (attempts < 10) {
             System.out.println("dein tip : " + errateZahl);
             versuchHistory.add(errateZahl);
@@ -41,7 +40,6 @@ public class Willkomensnachricht {
                 for (int versuchHis : versuchHistory) {
                     System.out.println("Deine letzten Versuche waren: " + "[" + versuchHis + "]");
                 }
-                //TODO add all previus versuche numbers (   done   )
                 System.out.println("Möchtest du noch einmal spielen? (ja/nein):");
                 //Scanner sc = new Scanner(System.in);
                 String antwort = scn.nextLine();
